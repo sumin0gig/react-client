@@ -1,0 +1,12 @@
+#Header{
+  background-color: var(--light-color);
+  border-bottom: 1px solid var(--shadow-color);
+  width: 100vw;
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--padding-small);
+}

@@ -1,0 +1,136 @@
+:root{
+  --main-color: #333;
+  --middle-color: #777;
+  --bg-color: #ddd;
+  --shadow-color: rgba(0,0,0,.2);
+  --light-color: #fff;
+  --assest-color: #525564;
+  --debt-color: #74828F;
+  --cost-color:#C25B56;
+  --cost-unfixed-color:#8F433F;
+  --cost-fixed-color:#CC9A97;
+  --profit-color: #96C0CE;
+  --profit-unfixed-color:#527682;
+  --profit-fixed-color:#A0CCDB;
+  --padding-default: 20px;
+  --padding-small: 5px;
+}
+*{padding: 0; margin: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+
+button{
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: var(--padding-small);
+  margin: var(--padding-small);
+  min-width: 80px;
+  cursor: pointer;
+  transition: .3s;
+}
+button:hover{
+  background-color: var(--middle-color);
+  color: var(--light-color);
+}
+button.btnOff{
+  transition: .5s;
+}
+button.nonebg{
+  background-color: initial;
+  min-width: 0;
+  color: var(--middle-color);
+}
+button[type='submit']{
+  background-color: var(--middle-color);
+  color: var(--light-color);
+}
+button[type='submit']:hover{
+  background-color: var(--main-color);
+}
+
+
+
+input{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+  height: 30px;
+  line-height: 30px;
+  padding: var(--padding-small) 0;
+  margin: var(--padding-small);
+  background-color: initial;
+}
+select{
+  outline: none;
+  border: none;
+}
+option{
+  outline: none;
+  border: none;
+}
+b{
+  padding: 0 8px;
+}
+h4{
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: var(--padding-default);
+}
+.assestcolor{
+  background-color: var(--assest-color);
+  color: var(--light-color);
+}
+.debtcolor{
+  background-color: var(--debt-color);
+  color: var(--light-color);
+}
+.costcolor{
+  background-color: var(--cost-color);
+  color: var(--light-color);
+}
+.profitcolor{
+  background-color: var(--profit-color);
+  color: var(--light-color);
+}
+
+.inner{
+  background-color: var(--light-color);
+  padding: 25px;
+  margin: var(--padding-default);
+  border-radius: 15px;
+  box-shadow: var(--shadow-color);
+}
+
+.announceFont{
+  color: var(--middle-color);
+  text-align: center;
+}
+
+#Main{
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+.dateinputs{
+	display: flex;
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+@media screen and (min-width:1004px) and (max-width:1200px){
+}
+@media screen and (min-width:600px) and (max-width:1004px){
+  .dateinputs{flex-wrap: wrap;}
+}
+@media screen and (max-width:600px){
+  .dateinputs{flex-wrap: wrap;}
+  .datebtn{width: 100%;}
+  .datebtn > button{width: 100%;}
+}

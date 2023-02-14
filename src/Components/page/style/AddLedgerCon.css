@@ -1,0 +1,46 @@
+.addLedger{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.addLedger .lable{
+	color: var(--middle-color);
+	font-weight: bold;
+	padding: 10px 10px 0px 0px;
+}
+.addLedger > div{padding: 5px;}
+.addLedger > div > input{width: 100%; text-align: right;}
+
+.addLedger .addStar{width: 100%;}
+.addLedger .addDate{width: 20%;}
+.addLedger .addTitle{width: 15%;}
+.addLedger .addPrice{width: 15%;}
+.addLedger .addLeft{width: 20%;}
+.addLedger .addRight{width: 20%;}
+
+.addLedger .addDate .dateinput{display: flex;}
+.addLedger .addDate .dateinput > input{width: 33%;}
+
+@media screen and (min-width:1004px) and (max-width:1200px){
+	.addLedger .addStar{width: 100%;}
+	.addLedger .addDate{width: 30%;}
+	.addLedger .addTitle{width: 30%;}
+	.addLedger .addPrice{width: 30%;}
+	.addLedger .addLeft{width: 48%;}
+	.addLedger .addRight{width: 48%;}
+	.addLedger .addBtn{width: 100%;}
+}
+@media screen and (min-width:600px) and (max-width:1004px){
+	.addLedger .addDate{width: 100%;}
+	.addLedger .addTitle{width: 50%;}
+	.addLedger .addPrice{width: 50%;}
+}
+@media screen and (max-width:600px){
+	.addLedger .addDate{width: 100%;}
+	.addLedger .addTitle{width: 100%;}
+	.addLedger .addPrice{width: 100%;}
+	.addLedger .addLeft{width: 100%;}
+	.addLedger .addRight{width: 100%;}
+	.addLedger .addBtn{width: 100%;}
+
+}

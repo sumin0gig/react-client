@@ -1,0 +1,52 @@
+.titleLists{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+.titleList{
+	width: 45%;
+	margin: var(--padding-default) var(--padding-small);
+}
+.titleitem{
+	margin-left: var(--padding-small);
+	width: 95%;
+	border-bottom: 1px solid var(--bg-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.titleitem input{
+	width: 60%;
+}
+.titleitem .fixes{
+	width: 20%;
+	display: flex;
+}
+.titleitem .fixes input{
+	width: auto;
+	margin: 0 5px;
+}
+.titleBtns{
+	border-bottom: 1px solid #ccc;
+}
+.titleitem .titleBtns{
+	width: 10%;
+}
+
+
+@media screen and (min-width:1004px) and (max-width:1200px){
+	.titleLists{justify-content: center;}
+	.titleList{width: 90%;}
+}
+@media screen and (min-width:600px) and (max-width:1004px){
+	.titleLists{justify-content: center;}
+	.titleList{width: 100%;}
+}
+@media screen and (max-width:600px){
+	.titleLists{justify-content: center;}
+	.titleList{width: 100%;}
+	.titleitem input{width: 100%;}
+	.titleitem .fixes{width: 60%;}
+	.titleitem .titleBtns{width: 40%;}
+	.titleitem{flex-wrap: wrap;}
+}

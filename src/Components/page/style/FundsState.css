@@ -1,0 +1,54 @@
+.fundsState{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+.fundsState > div{
+	width: 45%;
+}
+.fundsState .arrData{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid var(--shadow-color);
+	padding: 10px 5px;
+	width: 100%;
+}
+.fundsState .arrData .arrDataText{width: 55%;}
+.fundsState .arrData .arrDataPrice{width: 25%;}
+.fundsState .arrData .arrDataPer{width: 20%; text-align: right;}
+
+.fundsState .totalSum{
+	width: 40%;
+}
+.arrlist{
+	margin-bottom: 30px;
+}
+.fundsstatelists{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.funstatelist{
+	width: 100%;
+}
+.fixed{
+	display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.width100{
+	width: 100%;
+}
+
+@media screen and (min-width:1004px) and (max-width:1200px){
+	.fundsState > div{width: 100%;}
+}
+@media screen and (min-width:600px) and (max-width:1004px){
+	.fundsState > div{width: 100%;}
+}
+@media screen and (max-width:600px){
+	.fundsState > div{width: 100%;}
+}

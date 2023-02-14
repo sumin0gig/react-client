@@ -1,0 +1,45 @@
+#NM{
+  margin: 90px 0 60px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 100%;
+  width: 70%;
+}
+#NM .NMlist{
+  width: 49%;
+}
+#NM > div{
+  width: 100%;
+}
+#NM .navCategory{
+  background-color: #fff;
+  min-width: 400px;
+  width: 100%;
+  padding: var(--padding-default);
+  margin-right: var(--padding-default);
+  margin-bottom: 40px;
+  border-radius: 7px;
+  box-shadow: 0 0 5px 2px var(--shadow-color);
+}
+
+.dataRow{
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width:1004px) and (max-width:1200px){
+  #NM{width: 70%;}
+  #NM .NMlist{width: 100%;}
+}
+@media screen and (min-width:600px) and (max-width:1004px){
+  #NM{width: 95%;}
+  #NM .NMlist{width: 100%;}
+}
+@media screen and (max-width:600px){
+  #NM{width: 95%;}
+  #NM .NMlist{width: 100%;}
+}

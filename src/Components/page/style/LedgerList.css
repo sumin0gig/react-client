@@ -1,0 +1,34 @@
+.LedgerList{
+	border-bottom: 1px solid var(--shadow-color);
+	padding: var(--padding-small);
+	margin-top: var(--padding-small);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.LedgerList > div{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.LedgerList > div > div {
+	padding: 0 var(--padding-default);
+}
+.LedgerList .date{width: 15%; }
+.LedgerList .title{width: 40%; }
+.LedgerList .ledger{
+	width: 15%;
+	padding: var(--padding-small);
+	border-radius: 10px;
+	text-align: center;
+	margin: var(--padding-small);
+	max-width: 100px;
+}
+.LedgerList .price{width: 15%; text-align: right;}
+
+@media screen and (min-width:1004px) and (max-width:1200px){
+}
+@media screen and (min-width:600px) and (max-width:1004px){
+}
+@media screen and (max-width:600px){
+}
