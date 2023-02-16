@@ -52,7 +52,7 @@ const ShowAllLedgerCon = () => {
 	if(!data) return <div>No data</div>
 	return (
 		<div className='inner'>
-			<Title comment={"작성 내역"}/>
+			<Title comment={"작성 내역"} notice={"작성 내역은 최근 1달을 기본으로 보여줍니다."}/>
 			<div className='dateinputs'>
 				<div className='dateinput'>
 					<input type='number' onChange={onchange} name='ot_year' min={1999} value={ot_year}/>

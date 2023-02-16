@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addData } from '../../modules/getTed';
 
@@ -13,9 +13,12 @@ const AssetsCon = ({arr,ledgerdata,start,end}) => {
 	const aa = arr.map(ad=>Calculator(ad)).reduce((a,b)=>a+b,0)
 	const {getTed}=useSelector(state=>state);
 	
-	if(getTed.length<12){
+	useEffect(()=>{
+		if(getTed.length<12){
 			dispatch(addData(aa))
 	}
+	},[aa,dispatch,getTed.length])
+
 
 	return (
 		<>

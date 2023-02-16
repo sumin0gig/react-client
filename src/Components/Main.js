@@ -10,7 +10,7 @@ const Main = () => {
 	useEffect(()=>{
 		dispatch(getLedger())
 		dispatch(getTitle())
-	},[])
+	},[dispatch])
 	const {titledata,ledgerdata}= useSelector(state=>state.getDataReducer)
 
 	return (

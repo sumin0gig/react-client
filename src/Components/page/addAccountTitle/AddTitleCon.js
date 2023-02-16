@@ -57,7 +57,7 @@ const AddTitleCon = () => {
 	}
 	return (
 		<div className='inner'>
-		<Title comment={"계정 과목"}/>
+		<Title comment={"계정 과목"} notice={"돈의 분류를 선택 및 입력하세요."}/>
 		<form method='post' onSubmit={onsubmit}>
 			<b>항목명</b>
 			<input onChange={onchange} value={desc} name='desc' required/>

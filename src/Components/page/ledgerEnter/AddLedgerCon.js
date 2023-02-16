@@ -17,7 +17,7 @@ const AddLedgerCon = () => {
 		l_right:"현금",
 		l_star:undefined,
 	})
-	const {t_year,t_month,t_date,l_title,l_price,l_left,l_right,l_star}=timedata
+	const {t_year,t_month,t_date,l_title,l_price,l_left,l_right}=timedata
 	const onchange=(e)=>{
 		const {value,name}= e.target
 		setTimedata({
@@ -46,9 +46,9 @@ const AddLedgerCon = () => {
 	}
 	return (
 		<div className='inner'>
-			<Title comment={"거래 입력"}/>
+			<Title comment={"거래 입력"} notice={"거래를 입력하세요."}/>
 			<form onSubmit={onSubmit} className='addLedger'>
-			<div className='addStar'>
+			{/* <div className='addStar'>
 					<span className='lable'>만족</span>
 					<select name='l_star' onChange={onchange} value={l_star}>
 						<option value={undefined}></option>
@@ -58,7 +58,7 @@ const AddLedgerCon = () => {
 						<option value={2}>★★</option>
 						<option value={1}>★</option>
 					</select>
-				</div>
+				</div> */}
 				<div className='addDate'>
 					<span className='lable'>날짜</span>
 					<div className='dateinput'>

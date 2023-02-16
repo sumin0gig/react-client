@@ -23,7 +23,7 @@ const TitleList = ({data}) => {
 
 	return (
 		<div className='inner'>
-			<Title comment={"최근 입력된 거래"}/>
+			<Title comment={"최근 입력된 거래"} notice={"최근 입력된 거래는 입력 순으로 10건만 표시됩니다."}/>
 			{!data.length?
 				<div className='announceFont'> 입력된 거래가 없습니다. </div>:
 				<div>

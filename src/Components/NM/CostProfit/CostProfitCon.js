@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import ReactApexChart from 'react-apexcharts';
 
 const CostProfitCon = ({where,titledata,ledgerdata}) => {
@@ -23,7 +22,9 @@ const CostProfitCon = ({where,titledata,ledgerdata}) => {
 	['var(--profit-color)','var(--profit-unfixed-color)', 'var(--profit-fixed-color)'];
 	// pie 차트
 	const donutData={
-		series: [(totalSum/totalSum)*100,(sumFixed/totalSum)*100, (sum/totalSum)*100],
+		series: [isNaN((totalSum/totalSum)*100)?0:(totalSum/totalSum)*100,
+		isNaN((sumFixed/totalSum)*100)?0:(sumFixed/totalSum)*100,
+		isNaN((sum/totalSum)*100)?0:(sum/totalSum)*100],
 		options: {
 			chart: {
 				height: 150,
